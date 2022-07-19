@@ -55,5 +55,36 @@ body {
 }
 .rightSide {
     flex: 1;
-    /* margin-left: 40px; */    
+    /* margin-left: 40px; */   
+    display: flex; 
+}
+.rightSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.rightBig {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+.rightArrow {
+    position: absolute;
+    background-color: #227c9d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    top: 40%;
+    left: -35px;
+    z-index: 1;
+    transition: all ease .3s;
+}
+.rightArrow:hover {
+    opacity: .9;
+    box-shadow: 0px 0px 5px #444;
 }
